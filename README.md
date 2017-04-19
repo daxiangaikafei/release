@@ -10,8 +10,6 @@ nvm install v7.8
 
 nvm use v7.8
 
-node install pm2 -g
-
 # 代码拉取
 
 Git库地址：git@github.com:daxiangaikafei/release.git
@@ -20,7 +18,7 @@ Git库地址：git@github.com:daxiangaikafei/release.git
 
 # 服务开启
 
-pm2 /root/webApp/KoaServer/app/app.js
+用supervisor node /root/webApp/KoaServer/app/app.js
 
 # nginx配置
 
