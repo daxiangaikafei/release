@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Router = require("koa-router");
+var LocalConfig = require("./../../config/index");
+var config = LocalConfig.routes.good;
+var router = new Router();
+router.prefix(config.prefix);
+var user_1 = require("./user");
+router.all("/user/userId", user_1.login);
+module.exports = router;
