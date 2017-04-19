@@ -16,11 +16,11 @@ node install pm2 -g
 
 Git库地址：git@github.com:daxiangaikafei/release.git
 
-将代码放在/root/webApp目录下
+将代码放在服务器/root/webApp目录下
 
 # 服务开启
 
-pm2 /webApp/KoaServer/app/app.js
+pm2 /root/webApp/KoaServer/app/app.js
 
 # nginx配置
 
