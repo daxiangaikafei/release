@@ -18,7 +18,7 @@ Git库地址：git@github.com:daxiangaikafei/release.git
 
 # 服务开启
 
-用supervisor node /root/webApp/KoaServer/app/app.js
+用supervisor node /root/webApp/KoaServer/app.js
 
 # nginx配置
 
@@ -36,3 +36,62 @@ location /api/ {
 # 域名
 
 mqbii.qbao.com
+
+#KoaServer  集群服务开启
+cd /root/webApp/KoaServer/
+pm2 start process.json
+
+#KoaServer 配置文件说明
+
+#2 sysConfig.prduction.json
+{
+    "server": {
+        "url": "暂无意义",
+        "prot": "暂无意义"
+    },
+    "localServer": {
+        "port": 3000 //本服务开启在哪个端口
+    },
+    "redis": {
+        "port": 6379,  //redis 端口
+        "host": "192.168.132.40",//redis 地址
+        "family": 4  //ip4
+    },
+    "qiniu": {
+        "ACCESS_KEY": "暂无意义",
+        "SECRET_KEY": "暂无意义",
+        "Bucket_Name": "暂无意义"
+    }
+}
+
+#2 localConfig.production.json   
+{
+    "error": "项目错误提示信息"
+    "routes": "路由  详见下面路由"
+    "ignoreUrls:"不需要校验的路由",
+    "redis": {
+        "tokenKey": "保存在redis中的key",  
+        "expiration": "redis token保存时间" 
+    },
+    "cookie": {
+        "signed": "是否加密",
+        "maxAge": "cookie有效时长",
+        "secure": "cookie是否只有https请求下才发送", 
+        "httpOnly": "是否只有服务器可以取到cookie，默认为true。" //
+        "overwrite": "是否允许重写"  // 
+    },
+    "SSO": "是否只允许一台机器登录"  
+}
+
+#2  路由配置
+"routes": {  
+		//qbii  项目名
+        "qbii": {
+            "domain": "http://192.168.131.145:10550",//  访问qbii项目的地址  支持http  https
+            "prefix": "/api/qbii",   //前缀
+            "timeout": 5000,      //连接超时设置
+            "routes": {
+                
+            }
+        },
+    },
