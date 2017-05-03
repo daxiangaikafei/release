@@ -10,13 +10,16 @@ nvm install v7.8
 
 nvm use v7.8
 
+终端执行 sudo npm i pm2 -g 
+
 # 代码拉取
 
-Git库地址：git@github.com:daxiangaikafei/release.git
+Git库地址：https://github.com/daxiangaikafei/release.git
 Git用户名和密码：qbaowebapp/密码 
-将代码放在服务器/root/webApp目录下
+将代码放在服务器/root/webApp目录下 
+
 cd /root/webapp/
-git clone git@github.com:daxiangaikafei/release.git .  
+git clone https://github.com/daxiangaikafei/release.git .  (不要忘记最后的.)
 预发布环境执行 git checkout -b local origin/prepublish
 生产环境执行   git checkout -b local origin/master
 #配置文件修改
@@ -37,7 +40,7 @@ location /api/qbii/ {
 
 兼容qbii的旧版本配置  
 location /api/static/ {
-     alias /root/webApp/QBIndex;
+     alias /root/webApp/QBIndex/;
      index index.html index.htm;
 }  
 
