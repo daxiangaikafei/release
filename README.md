@@ -13,14 +13,14 @@ nvm use v7.8
 # 代码拉取
 
 Git库地址：git@github.com:daxiangaikafei/release.git
-
+Git用户名和密码：qbaowebapp/密码 
 将代码放在服务器/root/webApp目录下
+cd /root/webapp/
+git clone git@github.com:daxiangaikafei/release.git .  
 
-# 服务开启
+#配置文件修改
 
-用supervisor node /root/webApp/KoaServer/app.js
-
-# nginx配置
+#2 nginx配置
 location /qbii {
      alias /root/webApp/QBIndex;
      index index.html index.htm;
@@ -33,25 +33,16 @@ location /api/ {
 location /api/qbii/ {
     proxy_pass http://127.0.0.1:3000/api/qbii/;
 }
-#3 兼容qbii的旧版本配置  为了最小改动
+
+兼容qbii的旧版本配置  
 location /api/static/ {
-    proxy_pass http://127.0.0.1:3000/qbii/;
-}
+     alias /root/webApp/QBIndex;
+     index index.html index.htm;
+}  
 
+#2KoaServer 配置文件说明
 
-# https证书安装
-
-# 域名
-
-mqbii.qbao.com
-
-#KoaServer  集群服务开启
-cd /root/webApp/KoaServer/
-pm2 start process.json
-
-#KoaServer 配置文件说明
-
-#2 sysConfig.prduction.json
+#3 /root/webApp/KoaServer/sysConfig.prduction.json
 {
     "server": {
         "url": "暂无意义",
@@ -72,11 +63,11 @@ pm2 start process.json
     }
 }
 
-#2 localConfig.production.json   
+#2 /root/webApp/KoaServer/localConfig.production.json   
 {
     "error": "项目错误提示信息"
     "routes": "路由  详见下面路由"
-    "ignoreUrls:"不需要校验的路由",
+    "ignoreUrls":"不需要校验的路由",
     "redis": {
         "tokenKey": "保存在redis中的key",  
         "expiration": "redis token保存时间" 
@@ -104,7 +95,7 @@ pm2 start process.json
         },
     },
 
-#3  node集群配置
+#2  node集群配置 /root/webApp/KoaServer/process.json
 {
   "apps" : [{
     "script"    : "app.js",  //
@@ -117,3 +108,21 @@ pm2 start process.json
   }]
 }
 
+
+
+
+# https证书安装
+
+# 域名
+
+mqbii.qbao.com
+
+
+
+
+
+
+
+#KoaServer  集群服务开启
+cd /root/webApp/KoaServer/
+pm2 start process.json
