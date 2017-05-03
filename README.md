@@ -126,3 +126,8 @@ mqbii.qbao.com
 #KoaServer  集群服务开启
 cd /root/webApp/KoaServer/
 pm2 start process.json
+
+
+#KoaServer  拉取，更新代码，并重启
+cd /root/webApp/KoaServer/
+./up.sh
