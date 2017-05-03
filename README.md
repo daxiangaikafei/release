@@ -21,7 +21,6 @@ Git库地址：git@github.com:daxiangaikafei/release.git
 用supervisor node /root/webApp/KoaServer/app.js
 
 # nginx配置
-
 location /qbii {
      alias /root/webApp/QBIndex;
      index index.html index.htm;
@@ -30,6 +29,15 @@ location /qbii {
 location /api/ {
      proxy_pass http://127.0.0.1:3000;
 }
+
+location /api/qbii/ {
+    proxy_pass http://127.0.0.1:3000/api/qbii/;
+}
+#3 兼容qbii的旧版本配置  为了最小改动
+location /api/static/ {
+    proxy_pass http://127.0.0.1:3000/qbii/;
+}
+
 
 # https证书安装
 
@@ -95,3 +103,17 @@ pm2 start process.json
             }
         },
     },
+
+#3  node集群配置
+{
+  "apps" : [{
+    "script"    : "app.js",  //
+    "instances" : 4,      //开启进程数
+    "exec_mode" : "cluster", //
+    "watch"       : true,    //
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
+
