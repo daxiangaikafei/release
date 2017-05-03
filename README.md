@@ -17,7 +17,7 @@ Git用户名和密码：qbaowebapp/密码
 将代码放在服务器/root/webApp目录下
 cd /root/webapp/
 git clone git@github.com:daxiangaikafei/release.git .  
-预发布环境执行 git checkout -b local origin/release
+预发布环境执行 git checkout -b local origin/prepublish
 生产环境执行   git checkout -b local origin/master
 #配置文件修改
 
