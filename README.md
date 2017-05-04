@@ -137,3 +137,9 @@ pm2 start process.json
 #KoaServer  拉取，更新代码，并重启
 cd /root/webApp/KoaServer/
 ./up.sh
+
+
+
+
+#静态资源缓存要求
+除index.html,其它麻烦请强制缓存。缓存6个月。
