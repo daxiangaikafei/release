@@ -1583,7 +1583,7 @@ main .src-views-Home-___page__home-container___3TR9P .src-views-Home-___page__li
   border-left-color: transparent;
   top: -36px;
   left: -36px;
-  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
 }
 main .src-views-Home-___page__home-container___3TR9P .src-views-Home-___page__list-container___2LoyA .src-views-Home-___page__item___1e13- .src-views-Home-___page__banner___ZrG_E .src-views-Home-___page__corner___2ztHz i {
   position: absolute;
@@ -2150,19 +2150,19 @@ main .src-views-Home-___page__home-container___3TR9P .src-views-Home-___page__co
   }
 }
 .src-views-About-___page__about-container___OH3gz > div > div:nth-child(1) {
-  background: url(images/src/static/imgs/about/about-bg1.png) #e1e1e1 no-repeat center;
+  background: url(images/src/static/imgs/about/about-bg1.jpg) #e1e1e1 no-repeat center;
   background-size: cover;
 }
 .src-views-About-___page__about-container___OH3gz > div > div:nth-child(2) {
-  background: url(images/src/static/imgs/about/about-bg2.png) #e1e1e1 no-repeat center;
+  background: url(images/src/static/imgs/about/about-bg2.jpg) #e1e1e1 no-repeat center;
   background-size: cover;
 }
 .src-views-About-___page__about-container___OH3gz > div > div:nth-child(3) {
-  background: url(images/src/static/imgs/about/about-bg3.png) #e1e1e1 no-repeat center;
+  background: url(images/src/static/imgs/about/about-bg3.jpg) #e1e1e1 no-repeat center;
   background-size: cover;
 }
 .src-views-About-___page__about-container___OH3gz > div > div:nth-child(4) {
-  background: url(images/src/static/imgs/about/about-bg4.png) #e1e1e1 no-repeat center;
+  background: url(images/src/static/imgs/about/about-bg4.jpg) #e1e1e1 no-repeat center;
   background-size: cover;
 }
 .theme {

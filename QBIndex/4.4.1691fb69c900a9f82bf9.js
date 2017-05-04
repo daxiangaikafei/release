@@ -5299,7 +5299,7 @@ webpackJsonp([4],[
 	    return _react2.default.createElement(
 	        'div',
 	        null,
-	        isQBC ? _react2.default.createElement(_ui.NavBar, arguments[0]) : '',
+	        isQBC && _react2.default.createElement(_ui.NavBar, arguments[0]),
 	        _react2.default.createElement(
 	            'main',
 	            { style: { height: viewHeight, position: 'fixed', top: top + 'px', width: '100%', overflow: 'hidden' } },
@@ -5610,7 +5610,11 @@ webpackJsonp([4],[
 	              _context2.next = 4;
 	              return call(function () {
 	                return (0, _fetch.fetchPosts)("/api/user/userInfo", {}, "GET").then(function (data) {
-	                  return data.result.user;
+	                  return data.result.user ? data.result.user : {
+	                    "level": "暂无",
+	                    "assetsDes": 0,
+	                    "profitDes": 0
+	                  };
 	                }).catch(function (err) {
 	                  return {
 	                    "id": 111111,
@@ -5985,7 +5989,9 @@ webpackJsonp([4],[
 	        // height: '25%',
 	        position: 'relative'
 	      };
-	      var itemHeight = window.innerHeight - 44;
+	      var isQBC = QBFK.Business.isQBClient();
+	      var top = isQBC ? 44 : 0;
+	      var itemHeight = window.innerHeight - top;
 	      var swipeProps = {
 	        min: -itemHeight * 3,
 	        max: 0,
@@ -6434,12 +6440,13 @@ webpackJsonp([4],[
 	var ProjectItem = function (_Component) {
 	  (0, _inherits3.default)(ProjectItem, _Component);
 
+	  //进行中,1-已下架,2-项目未开始,3-项目已结束
 	  function ProjectItem(props) {
 	    (0, _classCallCheck3.default)(this, ProjectItem);
 
 	    var _this = (0, _possibleConstructorReturn3.default)(this, (ProjectItem.__proto__ || (0, _getPrototypeOf2.default)(ProjectItem)).call(this, props));
 
-	    _this.projectStatus = ['未开始', '进行中', '已结束'];
+	    _this.projectStatus = ['进行中', '已下架', '未开始', '已结束'];
 
 	    _this.togglePieShowHandler = function () {
 	      _this.setState({});
@@ -6468,7 +6475,7 @@ webpackJsonp([4],[
 	            _react2.default.createElement(
 	              'i',
 	              null,
-	              this.projectStatus[this.checkProjStatus(this.props.projInfo)]
+	              this.projectStatus[this.props.projInfo.runStatus]
 	            )
 	          ),
 	          _react2.default.createElement('img', { src: this.props.projInfo.picCover, alt: '', onError: function onError(e) {
@@ -6765,7 +6772,6 @@ webpackJsonp([4],[
 	      props.getUserInfo();
 	      props.getProjList();
 	    });
-
 	    _this.state = {
 	      isShowCover: !(0, _util.getCookie)("isShowCover", "storage"),
 	      isGaugeRendered: false
@@ -8245,7 +8251,7 @@ webpackJsonp([4],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// import { createCORSRequest } from 'libs/util'
-	// 
+	//
 
 	var viHtml = '<div><p></p><p></p><p></p><p></p><p></p></div>';
 
