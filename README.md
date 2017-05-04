@@ -20,8 +20,10 @@ Git用户名和密码：qbaowebapp/密码
 
 cd /root/webapp/
 git clone https://github.com/daxiangaikafei/release.git .  (不要忘记最后的.)
-预发布环境执行 git checkout -b local origin/prepublish
-生产环境执行   git checkout -b local origin/master
+预发布环境执行
+git checkout -b local origin/prepublish;
+生产环境执行  
+git checkout -b local origin/master
 #配置文件修改
 
 #2 nginx配置
