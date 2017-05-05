@@ -9,3 +9,5 @@
 *.DS_Store
 *.js.map
 *.map
+*.vscode
+.vscode
