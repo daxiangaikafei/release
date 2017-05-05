@@ -30,9 +30,9 @@ git checkout -b local origin/master
 #2 nginx配置
 
 location / {
-     alias /root/webApp/Index;
-     index index.html index.htm;
-}
+    root /root/webApp/Index/;
+    index index.html index.htm;
+} 
 
 location /qbii {
      alias /root/webApp/QBIndex;
