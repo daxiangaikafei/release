@@ -64,17 +64,37 @@ location /api/static/ {
     "localServer": {
         "port": 3000 //本服务开启在哪个端口
     },
+    //给单个redis使用
     "redis": {
         "port": 6379,  //redis 端口
         "host": "192.168.132.40",//redis 地址
         "family": 4  //ip4
     },
+    //配置redis集群
+    "reids":{
+        "sentinels":[
+                {
+                    "port": 6379,
+                    "host": "10.2.31.138",
+                    "family": 4
+                },
+                {
+                    "port": 6379,
+                    "host": "10.2.31.138",
+                    "family": 4
+                }
+            ],
+            "name":"qbiinode"
+    }
     "qiniu": {
         "ACCESS_KEY": "暂无意义",
         "SECRET_KEY": "暂无意义",
         "Bucket_Name": "暂无意义"
     }
 }
+
+#3 redis 集群配置
+
 
 #2 /root/webApp/KoaServer/localConfig.production.json   
 {
