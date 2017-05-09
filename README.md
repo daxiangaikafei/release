@@ -40,7 +40,16 @@ location /qbii {
 }
 
 location /api/ {
+     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+     proxy_set_header Host $http_host;
+     proxy_set_header X-NginX-Proxy true;
+     proxy_http_version 1.1;
+     proxy_set_header Upgrade $http_upgrade;
+     proxy_set_header Connection "upgrade";
+     proxy_max_temp_file_size 0;
      proxy_pass http://127.0.0.1:3000;
+     proxy_redirect off;
+     proxy_read_timeout 240s;
 }
 
 location /api/qbii/ {
@@ -64,17 +73,37 @@ location /api/static/ {
     "localServer": {
         "port": 3000 //本服务开启在哪个端口
     },
+    //给单个redis使用
     "redis": {
         "port": 6379,  //redis 端口
         "host": "192.168.132.40",//redis 地址
         "family": 4  //ip4
     },
+    //配置redis集群
+    "reids":{
+        "sentinels":[
+                {
+                    "port": 6379,
+                    "host": "10.2.31.138",
+                    "family": 4
+                },
+                {
+                    "port": 6379,
+                    "host": "10.2.31.138",
+                    "family": 4
+                }
+            ],
+            "name":"qbiinode"
+    }
     "qiniu": {
         "ACCESS_KEY": "暂无意义",
         "SECRET_KEY": "暂无意义",
         "Bucket_Name": "暂无意义"
     }
 }
+
+#3 redis 集群配置
+
 
 #2 /root/webApp/KoaServer/localConfig.production.json   
 {
@@ -97,7 +126,7 @@ location /api/static/ {
 
 #2  路由配置
 "routes": {  
-		//qbii  项目名
+        //qbii  项目名
         "qbii": {
             "domain": "http://192.168.131.145:10550",//  访问qbii项目的地址  支持http  https
             "prefix": "/api/qbii",   //前缀

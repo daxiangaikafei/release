@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "正在重新加载环境变量"
+source ~/.bash_profile
+
 echo "代码获取............."
 
 cd /root/webApp
