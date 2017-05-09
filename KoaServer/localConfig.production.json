@@ -8,7 +8,7 @@
     },
     "routes": {
         "qbii": {
-            "domain": "http://192.168.131.145:10550",
+            "domain": "http://node.google.com",
             "prefix": "/api/qbii",
             "timeout": 5000,
             "routes": {
@@ -70,7 +70,7 @@
             "timeout": 5000
         },
         "sys": {
-            "domain": "http://192.168.131.145:10550", 
+            "domain": "http://node.google.com", 
             "prefix": "/api",
             "timeout": 5000
         }
