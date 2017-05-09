@@ -76,7 +76,8 @@
         }
     },
     "ignoreUrls": {
-        "/api/account4Client/login": true
+        "/api/account4Client/login": true,
+         "/api/qbii/news/getNewsList":true
     },
     "redis": {
         "tokenKey": "nodeServer-token",
