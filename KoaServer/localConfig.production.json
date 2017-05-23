@@ -17,7 +17,7 @@
                     "version": "v1",
                     "versions": ["v1", "v2", "v3"]
                 },
-                "/user/level": {
+                "/user/level": { 
                     "url": "/api/user/${userId}/level",
                     "version": "v1",
                     "versions": ["v1", "v2", "v3"]
@@ -76,7 +76,10 @@
         }
     },
     "ignoreUrls": {
-        "/api/account4Client/login": true
+        "/api/account4Client/login": true,
+        "/api/qbii/news/getNewsList":true,
+        "/api/qbii/news/getNewsDetail":true,
+        "/api/qbii/v1/user/getUserLevel":true
     },
     "redis": {
         "tokenKey": "nodeServer-token",
