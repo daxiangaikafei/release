@@ -15,7 +15,9 @@ echo "正在重启服务.........."
 
 #pm2 kill
 cd /root/webApp/KoaServer/
-pm2 restart process.json
+
+
+# pm2 restart process.json
 
 #pm2 start process.json
 
