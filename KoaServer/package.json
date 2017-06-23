@@ -39,25 +39,5 @@
     "winston-daily-rotate-file": "^1.4.6"
   },
   "devDependencies": {
-    "@types/ioredis": "0.0.23",
-    "@types/isomorphic-fetch": "0.0.34",
-    "@types/koa": "^2.0.39",
-    "@types/koa-bodyparser": "^3.0.23",
-    "@types/koa-router": "^7.0.22",
-    "@types/lodash": "^4.14.66",
-    "@types/node": "^8.0.0",
-    "@types/node-schedule": "^1.2.0",
-    "@types/webpack": "^2.2.16",
-    "@types/winston": "^2.3.3",
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "run-sequence": "^1.2.2",
-    "ts-loader": "^2.1.0",
-    "typescript": "^2.3.4",
-    "uglify-es": "^3.0.18",
-    "uglify-es-webpack-plugin": "0.0.2",
-    "uglifyjs-webpack-plugin": "^0.4.6",
-    "webpack": "^3.0.0"
   }
 }
