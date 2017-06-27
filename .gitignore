@@ -10,4 +10,5 @@
 *.js.map
 *.map
 *gitignore
+*.log
 *.lgithub
