@@ -11,3 +11,7 @@
 *.map
 *gitignore
 *.log
+*.vscode
+.vscode
+*gitignore
+
