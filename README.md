@@ -171,7 +171,7 @@ pm2 start process.json
 
 
 #KoaServer  拉取，更新代码，并重启
-cd /root/webApp/KoaServer/
+cd /root/webApp/
 ./up.sh
 
 
@@ -179,3 +179,17 @@ cd /root/webApp/KoaServer/
 
 #静态资源缓存要求
 除index.html,其它麻烦请强制缓存。缓存6个月。
+
+
+
+
+###2017年06月29日 第二个版本上线
+
+##修改地方
+
+#1.发布方式修改
+cd /root/webApp/KoaServer/
+npm i
+
+
+#2.查看服务运行状态 pm2 monit  或者pm2 list 
