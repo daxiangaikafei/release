@@ -10,7 +10,7 @@
     },
     "routes": {
         "qbii": {
-            "domain": "http://10.2.31.110:8123",
+            "domain": "http://nodeqbii.qbao.com",
             "prefix": "/api/qbii",
             "timeout": 5000,
             "tokenKey": "nodeServer-token",
