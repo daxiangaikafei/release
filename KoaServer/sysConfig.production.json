@@ -10,20 +10,21 @@
             "sentinels":[
                 {
                     "port": 26379,
-                    "host": "10.2.31.138",
+                    "host": "10.2.29.78",
                     "family": 4
                 },
                 {
                     "port": 26379,
-                    "host": "10.2.31.139",
+                    "host": "10.2.29.79",
                     "family": 4
                 },
                 {
                     "port": 26379,
-                    "host": "10.2.31.140",
+                    "host": "10.2.29.80",
                     "family": 4
                 }
-            ]
+            ],
+            "name":"nodejs"
         },
         "qiniu": {
             "ACCESS_KEY": "",
