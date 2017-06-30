@@ -187,7 +187,6 @@
         "/api/account4Client/login": true,
         "/api/qbii/news/getNewsList":true,
         "/api/qbii/news/getNewsDetail":true,
-        "/api/qbii/v1/user/getUserLevel":true,
         "/api/item/user/login":true,
         "/api/weixin/info/item":true,
         "/api/weixin/js/info/item":true,
