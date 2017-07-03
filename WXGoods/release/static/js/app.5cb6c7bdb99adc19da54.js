@@ -246,9 +246,9 @@ webpackJsonp([9,7],{
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	!function () {
-		window.appid = '1241132132';
-		window.vn = 'name';
-		window.vc = '1.0.1';
+		window.appid = '7500B4F315AC40918D7134DF456AA276';
+		window.vn = 'wyhwh5';
+		window.vc = '1.0.0';
 		window.TDBaseUrl = 'http://sdk.talkingdata.com/app/h5/v1/websdk';
 		window.TDRequestUrl = 'http://h5data.talkingdata.net/app/v1';
 		function createScriptTd(url) {
@@ -600,4 +600,4 @@ webpackJsonp([9,7],{
 /***/ }
 
 });
-//# sourceMappingURL=app.c53f6a1ef3e0d778d56d.js.map
+//# sourceMappingURL=app.5cb6c7bdb99adc19da54.js.map
