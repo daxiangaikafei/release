@@ -10,7 +10,7 @@
     },
     "routes": {
         "qbii": {
-            "domain": "http://nodeqbii.qbao.com",
+            "domain": "http://appqbii.qbao.com",
             "prefix": "/api/qbii",
             "timeout": 5000,
             "tokenKey": "nodeServer-token",
@@ -25,21 +25,25 @@
                 "/user/level": { 
                     "url": "/api/user/${userId}/level",
                     "version": "v1",
+                     "isUse":false,
                     "versions": ["v1", "v2", "v3"]
                 },
                 "/user/userInfo": {
                     "url": "/api/user/${userId}/userInfo",
                     "version": "v1",
+                     "isUse":false,
                     "versions": ["v1", "v2", "v3"]
                 },
                 "/news/getNewsList": {
                     "url": "/api/news/getNewsList.html",
                     "version": "v1",
+                     "isUse":false,
                     "versions": ["v1", "v2", "v3"]
                 },
                 "/news/getNewsDetail/": {
                     "url": "/api/news/getNewsDetail",
                     "version": "v1",
+                     "isUse":false,
                     "versions": ["v1", "v2", "v3"]
                 },
                 "/user/userOrderList": {
@@ -78,7 +82,7 @@
             "SSO": false
         },
         "sys": {
-            "domain": "http://nodeqbii.qbao.com", 
+            "domain": "http://appqbii.qbao.com", 
             "prefix": "/api",
             "timeout": 5000,
             "tokenKey": "nodeServer-token",
@@ -142,8 +146,8 @@
             "domain": "http://nodewyhw.banyan-data.com",
             "prefix": "/api/item",
             "timeout": 5000,
+             "tokenKey":"n_t_item",
             "SSO":true,
-            "tokenKey":"n_t_item",
             "routes": {
                 "/goodsCoupon/couponList": {
                     "url": "/goodsCoupon/${userId}/couponList",
@@ -183,6 +187,14 @@
             }
         }
     },
+    "gateway":{
+        "routes":{
+            "/api/user/login":{
+                "isLogin":false,
+                "version":"1"
+            }
+        }
+    },
     "ignoreUrls": {
         "/api/account4Client/login": true,
         "/api/qbii/news/getNewsList":true,
@@ -192,6 +204,7 @@
         "/api/weixin/info/item":true,
         "/api/weixin/js/info/item":true,
         "/api/item/weixin/info":true
+        
     },
     "redis": {
         "tokenKey": "nodeServer-token",
