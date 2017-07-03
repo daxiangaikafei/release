@@ -10,7 +10,7 @@
     },
     "routes": {
         "qbii": {
-            "domain": "http://appqbii.qbao.com",
+            "domain": "http://nodeqbii.qbao.com",
             "prefix": "/api/qbii",
             "timeout": 5000,
             "tokenKey": "nodeServer-token",
@@ -82,7 +82,7 @@
             "SSO": false
         },
         "sys": {
-            "domain": "http://appqbii.qbao.com", 
+            "domain": "http://nodeqbii.qbao.com", 
             "prefix": "/api",
             "timeout": 5000,
             "tokenKey": "nodeServer-token",
