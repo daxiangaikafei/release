@@ -7,10 +7,24 @@
             "port": 3000
         },
         "redis": {
-           "port": 6379,
-            "host": "192.168.132.40",
-            "family": 4,
-            "name":"qbiinode"
+            "sentinels":[
+                {
+                    "port": 26379,
+                    "host": "10.2.31.138",
+                    "family": 4
+                },
+                {
+                    "port": 26379,
+                    "host": "10.2.31.139",
+                    "family": 4
+                },
+                {
+                    "port": 26379,
+                    "host": "10.2.31.140",
+                    "family": 4
+                }
+            ],
+            "name":"wyhw"
         },
         "qiniu": {
             "ACCESS_KEY": "",
