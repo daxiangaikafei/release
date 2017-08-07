@@ -87,10 +87,10 @@ class Config {
         this.configName = "localConfig";
         this.init = () => __awaiter(this, void 0, void 0, function* () {
             let data = yield this.getRedisData();
-            if (!data) {
-                data = JSON.parse(this.fs.readFileSync(path.resolve(__dirname, './localConfig.' + this.env + '.json')).toString());
-                redis_1.default.set(this.configName, JSON.stringify(data));
-            }
+            // if(!data){
+            data = JSON.parse(this.fs.readFileSync(path.resolve(__dirname, './localConfig.' + this.env + '.json')).toString());
+            redis_1.default.set(this.configName, JSON.stringify(data));
+            // }
             this.initConfig(data);
             console.log("config 数据初始化成功", data);
             this.IntervalUpdate(1000 * 10);
@@ -345,7 +345,6 @@ const config_1 = __webpack_require__(0);
 const logger_1 = __webpack_require__(8);
 const result = new result_1.default();
 const config = config_1.default;
-const IgnoreUrls = config.ignoreUrls;
 const format = "YYYY-MM-DD hh:mm:ss:SSS";
 const tokenHelp = new token_1.default();
 const env = "production" || 'development';
@@ -446,6 +445,7 @@ class VerifyUser {
     }
     checkIgnoreUrl(url) {
         let result = false;
+        let IgnoreUrls = config.ignoreUrls;
         for (let key in IgnoreUrls) {
             let index = key.indexOf("/:");
             if (index >= 0) {
