@@ -1,0 +1,267 @@
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 10ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 20ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 30ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 40ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 50ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 60ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 70ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 80ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+[ioredis] Unhandled error event: Error: All sentinels are unreachable. Retrying from scratch after 90ms Last error: Connection is closed.
+    at connectToNext (/Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:65:19)
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:98:9
+    at /Users/tangping/Documents/work/release/KoaServer/node_modules/ioredis/lib/connectors/sentinel_connector.js:135:14
+    at tryCatcher (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise.errorAdapter [as _rejectionHandler0] (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/nodeify.js:35:34)
+    at Promise._settlePromise (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:566:21)
+    at Promise._settlePromise0 (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/tangping/Documents/work/release/KoaServer/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:800:20)
+    at tryOnImmediate (timers.js:762:5)
+    at processImmediate [as _immediateCallback] (timers.js:733:5)
+config 数据初始化成功 { error: 
+   { '101': '接口已关闭',
+     '200': '未登录',
+     '201': '微信未关注，需要授权',
+     '202': 'token失效',
+     '404': '未发现',
+     '405': '不允许使用该方法',
+     '500': '内部错误',
+     '1000': '超时' },
+  routes: 
+   { qbii: 
+      { domain: 'http://nodeqbii.qbao.com',
+        prefix: '/api/qbii',
+        timeout: 5000,
+        tokenKey: 'nodeServer-token',
+        expiration: 2592000,
+        SSO: false,
+        routes: [Object] },
+     good: 
+      { domain: 'http://192.168.7.104',
+        prefix: '/api/good',
+        timeout: 5000,
+        tokenKey: 'nodeServer-token',
+        expiration: 2592000,
+        SSO: false },
+     sys: 
+      { domain: 'http://nodeqbii.qbao.com',
+        prefix: '/api',
+        timeout: 5000,
+        tokenKey: 'nodeServer-token',
+        expiration: 2592000,
+        SSO: false },
+     weixin: 
+      { domain: ' https://api.weixin.qq.com',
+        prefix: '/api/weixin',
+        timeout: 5000,
+        routes: [Object],
+        ips: [Array] },
+     item: 
+      { domain: 'http://nodewyhw.banyan-data.com',
+        prefix: '/api/item',
+        timeout: 5000,
+        tokenKey: 'n_t_item',
+        SSO: true,
+        routes: [Object] },
+     itemUC: 
+      { domain: 'http://wyhw-uc-api.banyan-data.com',
+        prefix: '/api/item',
+        timeout: 5000,
+        tokenKey: 'n_t_item',
+        SSO: true,
+        routes: [Object] } },
+  gateway: { routes: { '/api/user/login': [Object] } },
+  ignoreUrls: 
+   { '/api/account4Client/login': true,
+     '/api/qbii/news/getNewsList': true,
+     '/api/qbii/news/getNewsDetail': true,
+     '/api/qbii/v1/user/getUserLevel': true,
+     '/api/item/user/login': true,
+     '/api/weixin/info/item': true,
+     '/api/weixin/js/info/item': true,
+     '/api/item/weixin/info': true,
+     '/api/item/goodsCoupon/catogry/all': true,
+     '/api/item/goodsCoupon/couponList': true,
+     '/api/item/goods/goodsCoupon/activeGoods': true,
+     '/api/item/goodsCoupon/couponDetail/:goodsId': true,
+     '/api/item/goodsCoupon/activeGoodsDetail/:goodsId': true,
+     '/api/sys/db/auth/user/up': true },
+  redis: { tokenKey: 'nodeServer-token', expiration: 2592000 },
+  auxiliary: { timing: { weixin: [Object] } },
+  cookie: 
+   { signed: true,
+     maxAge: 25920000000,
+     secure: false,
+     httpOnly: true },
+  SSO: false }
+{ domain: 'http://nodeqbii.qbao.com',
+  prefix: '/api/qbii',
+  timeout: 5000,
+  tokenKey: 'nodeServer-token',
+  expiration: 2592000,
+  SSO: false,
+  routes: 
+   { '/user/userId': 
+      { url: '/api/user/${userId}/userId',
+        version: 'v1',
+        versions: [Array] },
+     '/user/level': 
+      { url: '/api/user/${userId}/level',
+        version: 'v1',
+        isUse: false,
+        versions: [Array] },
+     '/user/userInfo': 
+      { url: '/api/user/${userId}/userInfo',
+        version: 'v1',
+        isUse: false,
+        versions: [Array] },
+     '/news/getNewsList': 
+      { url: '/api/news/getNewsList.html',
+        version: 'v1',
+        isUse: false,
+        versions: [Array] },
+     '/news/getNewsDetail/': 
+      { url: '/api/news/getNewsDetail',
+        version: 'v1',
+        isUse: false,
+        versions: [Array] },
+     '/user/userOrderList': 
+      { url: '/api/user/${userId}/userOrderList.html',
+        version: 'v1',
+        versions: [Array] },
+     '/user/userProfitList': 
+      { url: '/api/user/${userId}/userProfitList.html',
+        version: 'v1',
+        versions: [Array] },
+     '/project/list': 
+      { url: '/api/project/${userId}/list',
+        version: 'v1',
+        versions: [Array] },
+     '/page/:projectId': 
+      { url: '/api/page/${userId}/${projectId}',
+        version: 'v1',
+        versions: [Array] },
+     '/news/isFinishNews.html': 
+      { url: '/api/news/${userId}/isFinishNews.html',
+        version: 'v1',
+        versions: [Array] } } }
+初始化App
+3000
+fetxhUrl:/config/wxConfig
+xxxx OK undefined
+redis 配置文件已更新
