@@ -73,7 +73,7 @@
                     "versions": ["v1", "v2", "v3"]
                 },
                 "/specialUser/sendSmsCode":{
-                    "url":"api/specialUser/${userId}/sendSmsCode",
+                    "url":"/api/specialUser/${userId}/sendSmsCode",
                     "version": "v1",
                     "versions": ["v1", "v2", "v3"]
                 },
