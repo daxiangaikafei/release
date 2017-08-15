@@ -269,7 +269,7 @@
                                 "v3"
                             ],
                             "isLogin": true,
-                            "method":"GET"
+                            "method":"POST"
                         },
                         "/goodsCoupon/catogry/all": {
                             "url": "/goodsCoupon/catogry/all",
@@ -390,18 +390,6 @@
                 {
                     "domain": "http://wyhw.banyan-data.com",
                     "timeout": 5000,
-                    "rightTemplate":{
-                        "code": {
-                            "key":"code",
-                            "value":1000
-                        },
-                        "result": {
-                            "key":"data"
-                        },
-                        "message": {
-                            "key":"message"
-                        }
-                    },
                     "routes": {
                         "/wx/qiniu/idimage": {
                             "url": "/wx/qiniu/idimage",
