@@ -388,7 +388,7 @@
                             "versions": ["v1", "v2", "v3"]
                         },
                         "/user/partner/userinfo/submit": {
-                            "url": "/uc/partner/userinfo/submit",
+                            "url": "/uc/partner/userinfo/submit/${userId}",
                             "version": "v1",
                             "versions": ["v1", "v2", "v3"]
                         },
