@@ -46,6 +46,7 @@
     "@types/winston": "^2.3.3",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
+    "gulp-clean": "^0.3.2",
     "gulp-util": "^3.0.8",
     "run-sequence": "^1.2.2",
     "ts-loader": "^2.1.0",
