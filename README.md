@@ -6,9 +6,9 @@ curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash
 
 source ~/.bash_profile
 
-nvm install v7.8
+nvm install v8.4
 
-nvm use v7.8
+nvm use v8,4
 
 终端执行 sudo npm i pm2 -g 
 
