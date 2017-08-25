@@ -313,6 +313,7 @@
         }
     },
     "ignoreUrls": {
+         "/api/account4Client/login": true,
         "/api/qbii/news/getNewsList":true,
         "/api/qbii/news/getNewsDetail":true,
         "/api/qbii/v1/user/getUserLevel":true,
